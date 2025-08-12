@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wohnungsbewerbung – Devin Murzello (DE & EN)</title>
+  <meta name="description" content="Zweisprachige Wohnungsbewerbung für Düsseldorf – Devin Murzello." />
+  <style>
+    :root{
+      --primary:#005bb5;
+      --accent:#ffd700;
+      --bg:#0b1220;
+      --surface:#101827;
+      --text:#e6ecff;
+      --muted:#9fb2d9;
+      --line:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1060px;margin:0 auto;padding:24px}
+    header.hero{
+      position:relative;min-height:54vh;display:flex;align-items:center;overflow:hidden;
+      background:
+        radial-gradient(1200px 600px at 80% -20%, rgba(255,215,0,0.08), transparent),
+        radial-gradient(900px 560px at 10% 120%, rgba(0,91,181,0.18), transparent),
+        linear-gradient(180deg,#0b1220 0%,#0a0f1a 100%);
+      border-bottom:1px solid var(--line);
+    }
+    h1{font-size:clamp(28px,5vw,48px);line-height:1.05;margin:10px 0 8px;color:#fff}
+    .subtitle{font-size:clamp(16px,2.1vw,20px);opacity:.9;max-width:860px}
+    .topbar{position:absolute;top:16px;right:16px;display:flex;gap:8px}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,0.06);color:#fff;cursor:pointer}
+    .btn.primary{background:linear-gradient(135deg,var(--primary),#0d74d1);border:none;box-shadow:0 10px 24px rgba(13,116,209,0.35)}
+    main section{padding:36px 0;border-bottom:1px solid var(--line)}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+    .col-4{grid-column:span 4}.col-6{grid-column:span 6}.col-8{grid-column:span 8}.col-12{grid-column:span 12}
+    @media (max-width:900px){.col-4,.col-6,.col-8,.col-12{grid-column:span 12}}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+    h2{font-size:clamp(22px,3vw,30px);margin:0 0 8px}
+    .lead{opacity:.95;margin:0 0 14px;font-size:18px}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+    .kvs{display:grid;gap:10px}
+    .kvs div{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid var(--line)}
+    .accent{color:var(--accent)}
+    .muted{color:var(--muted)}
+    .flag{font-size:14px;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .badge{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.03)}
+    .page{break-after:page}
+    .no-break{break-inside:avoid}
+    .lang-title{display:flex;align-items:center;gap:10px}
+    .tiny{opacity:.85;font-size:12px}
+    footer{padding:32px 0;color:#95a3bf;font-size:14px;text-align:center}
+    @media print{
+      .topbar{display:none}
+      header.hero{min-height:auto;padding:24px 0}
+      .btn{display:none}
+      body{background:#fff;color:#000}
+      .card{border-color:#d0d7e2;background:#fff}
+      .page{page-break-after:always}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="topbar">
+        <a class="btn" href="#de">Deutsch</a>
+        <a class="btn" href="#en">English</a>
+        <button class="btn primary" onclick="window.print()">Als PDF speichern / Print PDF</button>
+      </div>
+      <span class="badge">Wohnungsbewerbung – Düsseldorf</span>
+      <h1>Devin Murzello</h1>
+      <p class="subtitle">Zuverlässiger, ruhiger Mieter mit festen Wurzeln in Düsseldorf. Aktuell angestellt als <strong>Senior Data Analyst</strong> &amp; <strong>kontinuierlich im Deutschlernen</strong> – Bewerbung ausschließlich für Wohnungen in <strong>Düsseldorf</strong>.</p>
+    </div>
+  </header>
+
+  <!-- GERMAN PAGE -->
+  <main id="de" class="page">
+    <section>
+      <div class="container">
+        <div class="lang-title"><span class="flag">DE</span><h2>Über mich</h2></div>
+        <p class="lead">Ich heiße <strong>Devin Murzello</strong>, wohne in <strong>40229 Düsseldorf</strong> (Ludwigshafener Str. 33) und arbeite als <strong>Senior Data Analyst</strong> (seit 2017 in der Datenanalyse, aktuell bei <strong>MediaCom Agentur für Media-Beratung GmbH</strong>). Ich bin zuverlässig, ordentlich und respektvoll im Umgang mit Nachbar:innen und Gemeinschaftseigentum.</p>
+        <div class="grid">
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Schnellinfos</strong></div>
+              <div class="kvs" style="margin-top:10px">
+                <div><span>Wohnort</span><strong>40229 Düsseldorf</strong></div>
+                <div><span>Beschäftigung</span><strong>Senior Data Analyst</strong></div>
+                <div><span>Arbeitgeber</span><strong>MediaCom (Düsseldorf)</strong></div>
+                <div><span>Sprachen</span><strong>Englisch (fließend), Deutsch (Grundkenntnisse)</strong></div>
+                <div><span>Deutschlernen</span><strong>Wöchentlicher Kurs + tägliche Praxis</strong></div>
+                <div><span>Unterlagen</span><strong>Schufa, Arbeitsvertrag/Payslips, Ausweis</strong></div>
+              </div>
+              <p class="tiny muted" style="margin-top:10px">Hinweis: Ich verbessere mein Deutsch kontinuierlich und nutze Sprachkurs & tägliche Routine (Lesen, Hören, Tandem).</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Warum Düsseldorf</strong></div>
+              <ul>
+                <li><strong>Lokale Verbundenheit:</strong> Alltagswege in Stadtmitte, Bilk/Unterbilk & Pempelfort; Einkäufe am Carlsplatz und auf der Kö.</li>
+                <li><strong>Lebensqualität:</strong> Rheinpromenade, Hofgarten, Südpark & Volksgarten für Sport und Erholung.</li>
+                <li><strong>Kulinarik & Kultur:</strong> Little Tokyo (Immermannstraße) – mein Lieblingsviertel für Essen & Begegnungen.</li>
+                <li><strong>Arbeitsnah:</strong> MedienHafen & Innenstadt mit vielen Agenturen/Tech-Teams – kurze Wege, pünktlich & planbar.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:16px">
+          <div class="col-8">
+            <div class="card no-break">
+              <div class="pill"><strong>Was Vermieter:innen von mir erwarten dürfen</strong></div>
+              <ul>
+                <li><strong>Verantwortung & Ruhe:</strong> respektvoll, verlässlich, kein Partylärm; Hausordnung wird eingehalten.</li>
+                <li><strong>Pflege der Wohnung:</strong> sorgfältiger Umgang mit Böden/Einbauten; regelmäßige Reinigung/Wartung.</li>
+                <li><strong>Zahlungssicherheit:</strong> Gehaltsnachweise & Schufa können bereitgestellt werden; Miete stets pünktlich.</li>
+                <li><strong>Langfristige Perspektive:</strong> ich bewerbe mich <u>ausschließlich</u> in Düsseldorf und plane eine mehrjährige Mietdauer.</li>
+                <li><strong>Transparente Kommunikation:</strong> Anliegen melde ich frühzeitig; Termine halte ich zuverlässig ein.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card no-break">
+              <div class="pill"><strong>Dokumente (kurzfristig)</strong></div>
+              <ul>
+                <li>Schufa-Auskunft</li>
+                <li>Arbeitsvertrag / aktuelle Gehaltsabrechnungen</li>
+                <li>Kopie Ausweis & gültige Arbeitserlaubnis</li>
+                <li>Vorvermieter-/Arbeitgeber-Bestätigung (falls gewünscht)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:16px">
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Kontakt</strong></div>
+              <p class="lead">
+                <strong class="accent">Devin Murzello</strong><br/>
+                <a href="tel:+4915510332761">+49 155 1033 2761</a><br/>
+                <a href="mailto:devinmurzello.dm@gmail.com">devinmurzello.dm@gmail.com</a><br/>
+                Ludwigshafener Str. 33, 40229 Düsseldorf
+              </p>
+              <p class="tiny muted">Besichtigung gerne flexibel – ich freue mich auf Ihre Rückmeldung.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Persönliches</strong></div>
+              <ul>
+                <li>Teamgeist durch Sport (Badminton, Volleyball; Cricket im Ligabetrieb)</li>
+                <li>Technikaffin & ordnungsliebend – hilft beim pfleglichen Wohnen</li>
+                <li>Rheinbahn-Pendler, kurze Wege – zuverlässig und pünktlich</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ENGLISH PAGE -->
+  <main id="en" class="page">
+    <section>
+      <div class="container">
+        <div class="lang-title"><span class="flag">EN</span><h2>About me</h2></div>
+        <p class="lead">My name is <strong>Devin Murzello</strong>. I live in <strong>40229 Düsseldorf</strong> (Ludwigshafener Str. 33) and work as a <strong>Senior Data Analyst</strong> (in analytics since 2017; currently with <strong>MediaCom</strong>). I’m a considerate, tidy and quiet tenant who values good relations with neighbours and caretakers.</p>
+
+        <div class="grid">
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Quick facts</strong></div>
+              <div class="kvs" style="margin-top:10px">
+                <div><span>Residence</span><strong>40229 Düsseldorf</strong></div>
+                <div><span>Position</span><strong>Senior Data Analyst</strong></div>
+                <div><span>Employer</span><strong>MediaCom (Düsseldorf)</strong></div>
+                <div><span>Languages</span><strong>English (fluent), German (basic)</strong></div>
+                <div><span>German learning</span><strong>Weekly course + daily practice</strong></div>
+                <div><span>Docs ready</span><strong>Schufa, contract/pay slips, ID</strong></div>
+              </div>
+              <p class="tiny muted" style="margin-top:10px">I’m continuously improving my German and practice every day.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Why Düsseldorf</strong></div>
+              <ul>
+                <li><strong>Local ties:</strong> daily life around Stadtmitte, Bilk/Unterbilk & Pempelfort; errands at Carlsplatz & along the Kö.</li>
+                <li><strong>Quality of life:</strong> jogging by the Rhine Promenade; green breaks in Hofgarten, Südpark & Volksgarten.</li>
+                <li><strong>Food & culture:</strong> Little Tokyo (Immermannstraße) is my go-to for meals and community.</li>
+                <li><strong>Close to work:</strong> Media & tech teams in the city/MedienHafen – short commutes, reliable schedules.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:16px">
+          <div class="col-8">
+            <div class="card no-break">
+              <div class="pill"><strong>What you can expect from me</strong></div>
+              <ul>
+                <li><strong>Responsible & quiet:</strong> no noise disturbance; house rules respected at all times.</li>
+                <li><strong>Care for the flat:</strong> mindful use of floors and fittings; regular cleaning & upkeep.</li>
+                <li><strong>On-time payments:</strong> salary slips & Schufa available; rent paid punctually.</li>
+                <li><strong>Long-term stay:</strong> I am applying <u>exclusively</u> within Düsseldorf and plan to rent for several years.</li>
+                <li><strong>Clear communication:</strong> I address issues early and keep appointments reliably.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card no-break">
+              <div class="pill"><strong>Documents (ready)</strong></div>
+              <ul>
+                <li>Schufa report</li>
+                <li>Employment contract / recent payslips</li>
+                <li>ID copy & valid work permit</li>
+                <li>Previous landlord / employer reference (on request)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:16px">
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Contact</strong></div>
+              <p class="lead">
+                <strong class="accent">Devin Murzello</strong><br/>
+                <a href="tel:+4915510332761">+49 155 1033 2761</a><br/>
+                <a href="mailto:devinmurzello.dm@gmail.com">devinmurzello.dm@gmail.com</a><br/>
+                Ludwigshafener Str. 33, 40229 Düsseldorf
+              </p>
+              <p class="tiny muted">Happy to arrange a viewing at your convenience.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card no-break">
+              <div class="pill"><strong>Personal</strong></div>
+              <ul>
+                <li>Team player through sports (badminton, volleyball; league cricket)</li>
+                <li>Tech-savvy & organized – good for careful, tidy living</li>
+                <li>Rheinbahn commuter – short, reliable routes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Wohnungsbewerbung – Düsseldorf. Erstellt für Devin Murzello (DE & EN).</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
